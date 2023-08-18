@@ -96,7 +96,6 @@ class CacheFeedUseCaseTests: XCTestCase {
     }
     
     func test_save_succedsOnSuccessfulCacheInsertion() {
-        let items = [uniqueItem(), uniqueItem()]
         let (sut, store) = makeSUT()
         
         expect(sut, toCompleteWithError: nil) {
@@ -131,7 +130,6 @@ class CacheFeedUseCaseTests: XCTestCase {
     }
     
     private func expect(_ sut: LocalFeedLoader, toCompleteWithError expectedError: NSError?, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
-        let insertionError = anyNSError()
         let exp = expectation(description: "wait for completion")
         
         var receivedError: Error?
