@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import EssentialFeed
 
 class CoreDataFeedStoreTests: XCTestCase, FailableFeedStore {
 
@@ -79,5 +80,18 @@ class CoreDataFeedStoreTests: XCTestCase, FailableFeedStore {
     
     func test_storeSideEffects_runSerially() {
         
+    }
+    
+    // MARK: - Helpers
+    
+    private func makeSUT(file: StaticString = #filePath, line: UInt = #line) throws -> FeedStore {
+        let sut = try CoreDataFeedStore(storeURL: inMemoryStoreURL())
+        trackForMemoryLeaks(sut, file: file, line: line)
+        return sut
+    }
+
+    private func inMemoryStoreURL() -> URL {
+        URL(fileURLWithPath: "/dev/null")
+            .appendingPathComponent("\(type(of: self)).store")
     }
 }
