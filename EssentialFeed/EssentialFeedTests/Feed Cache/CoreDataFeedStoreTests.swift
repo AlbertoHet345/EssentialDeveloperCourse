@@ -95,7 +95,9 @@ class CoreDataFeedStoreTests: XCTestCase, FailableFeedStore {
     }
     
     func test_delete_hasNoSideEffectsOnEmptyCache() throws {
-        
+        let sut = try makeSUT()
+
+        assertThatDeleteHasNoSideEffectsOnEmptyCache(on: sut)
     }
     
     func test_delete_deliversNoErrorOnNonEmptyCache() throws {
