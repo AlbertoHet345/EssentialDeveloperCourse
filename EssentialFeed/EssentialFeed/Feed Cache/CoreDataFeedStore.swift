@@ -46,12 +46,8 @@ final public class CoreDataFeedStore: FeedStore {
         let context = self.context
         context.perform {
             do {
-                let request = NSFetchRequest<ManagedCache>(entityName: ManagedCache.className())
-                if let cache = try context.fetch(request).first {
-                    let feed = cache.feed
-                        .compactMap { $0 as? ManagedFeedImage }
-                        .map { LocalFeedImage(id: $0.id, description: $0.imageDescription, location: $0.location, url: $0.url) }
-                    completion(.found(feed: feed, timestamp: cache.timestamp))
+                if let cache = try ManagedCache.find(in: context) {
+                    completion(.found(feed: cache.localFeed, timestamp: cache.timestamp))
                 } else {
                     completion(.empty)
                 }
@@ -65,18 +61,9 @@ final public class CoreDataFeedStore: FeedStore {
         let context = self.context
         context.perform {
             do {
-                let cache = ManagedCache(context: context)
+                let cache = try ManagedCache.newUniqueInstance(in: context)
                 cache.timestamp = timestamp
-                
-                let managedFeed = NSOrderedSet(array: feed.map { local in
-                    let managedFeedImage = ManagedFeedImage(context: context)
-                    managedFeedImage.id = local.id
-                    managedFeedImage.imageDescription = local.description
-                    managedFeedImage.location = local.location
-                    managedFeedImage.url = local.url
-                    return managedFeedImage
-                })
-                cache.feed = managedFeed
+                cache.feed = ManagedFeedImage.images(from: feed, in: context)
                 
                 try context.save()
                 completion(nil)
@@ -97,6 +84,23 @@ class ManagedCache: NSManagedObject {
     @NSManaged var feed: NSOrderedSet
 }
 
+extension ManagedCache {
+    static func find(in context: NSManagedObjectContext) throws -> ManagedCache? {
+        let request = NSFetchRequest<ManagedCache>(entityName: entity().name!)
+        request.returnsObjectsAsFaults = false
+        return try context.fetch(request).first
+    }
+    
+    static func newUniqueInstance(in context: NSManagedObjectContext) throws -> ManagedCache {
+        try find(in: context).map(context.delete)
+        return ManagedCache(context: context)
+    }
+    
+    var localFeed: [LocalFeedImage] {
+        feed.compactMap { ($0 as? ManagedFeedImage)?.local }
+    }
+}
+
 @objc(ManagedFeedImage)
 class ManagedFeedImage: NSManagedObject {
     @NSManaged var id: UUID
@@ -104,4 +108,21 @@ class ManagedFeedImage: NSManagedObject {
     @NSManaged var location: String?
     @NSManaged var url: URL
     @NSManaged var cache: ManagedCache
+}
+
+extension ManagedFeedImage {
+    static func images(from feed: [LocalFeedImage], in context: NSManagedObjectContext) -> NSOrderedSet {
+        NSOrderedSet(array: feed.map { local in
+            let managedFeedImage = ManagedFeedImage(context: context)
+            managedFeedImage.id = local.id
+            managedFeedImage.imageDescription = local.description
+            managedFeedImage.location = local.location
+            managedFeedImage.url = local.url
+            return managedFeedImage
+        })
+    }
+    
+    var local: LocalFeedImage {
+        LocalFeedImage(id: id, description: imageDescription, location: location, url: url)
+    }
 }
