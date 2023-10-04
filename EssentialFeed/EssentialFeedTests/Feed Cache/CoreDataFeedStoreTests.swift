@@ -7,7 +7,8 @@
 
 import XCTest
 
-class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
+class CoreDataFeedStoreTests: XCTestCase, FailableFeedStore {
+
     func test_retrieve_deliversEmptyOnEmptyCache() {
         
     }
@@ -17,6 +18,14 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
     
     func test_retrieve_deliversFoundValuesOnNonEmptyCache() {
+        
+    }
+    
+    func test_retrieve_deliversFailureOnRetrievalError() {
+        
+    }
+    
+    func test_retrieve_hasNoSideEffectsOnFailure() {
         
     }
     
@@ -36,6 +45,14 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
         
     }
     
+    func test_insert_deliversErrorOnInsertionError() {
+        
+    }
+    
+    func test_insert_hasNoSideEffectsOnInsertionError() {
+        
+    }
+    
     func test_delete_deliversNoErrorOnEmptyCache() {
         
     }
@@ -49,6 +66,14 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
     
     func test_delete_emptiesPreviouslyInsertedCache() {
+        
+    }
+    
+    func test_delete_deliversErrorOnDeletionError() {
+        
+    }
+    
+    func test_delete_hasNoSideEffectsOnDeletionError() {
         
     }
     
