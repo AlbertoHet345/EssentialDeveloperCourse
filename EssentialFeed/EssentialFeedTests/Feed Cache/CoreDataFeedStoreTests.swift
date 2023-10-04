@@ -113,7 +113,18 @@ class CoreDataFeedStoreTests: XCTestCase, FailableFeedStore {
     }
     
     func test_delete_deliversErrorOnDeletionError() throws {
-        
+        let stub = NSManagedObjectContext.alwaysFailingSaveStub()
+        let feed = uniqueImageFeed().local
+        let timestamp = Date()
+        let sut = try makeSUT()
+
+        insert((feed, timestamp), to: sut)
+
+        stub.startIntercepting()
+
+        let deletionError = deleteCache(from: sut)
+
+        XCTAssertNotNil(deletionError, "Expected cache deletion to fail")
     }
     
     func test_delete_hasNoSideEffectsOnDeletionError() throws {
