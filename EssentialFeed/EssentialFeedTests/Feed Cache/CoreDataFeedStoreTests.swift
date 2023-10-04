@@ -151,6 +151,21 @@ class CoreDataFeedStoreTests: XCTestCase, FailableFeedStore {
         assertThatSideEffectsRunSerially(on: sut)
     }
     
+    func test_imageEntity_properties() throws {
+        let entity = try XCTUnwrap(
+            CoreDataFeedStore.model?.entitiesByName["ManagedFeedImage"]
+        )
+
+        // Instructions: update the attribute
+        // names if they don't match the names
+        // on your Core Data entity
+
+        entity.verify(attribute: "id", hasType: .UUIDAttributeType, isOptional: false)
+        entity.verify(attribute: "imageDescription", hasType: .stringAttributeType, isOptional: true)
+        entity.verify(attribute: "location", hasType: .stringAttributeType, isOptional: true)
+        entity.verify(attribute: "url", hasType: .URIAttributeType, isOptional: false)
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT(file: StaticString = #filePath, line: UInt = #line) throws -> FeedStore {
