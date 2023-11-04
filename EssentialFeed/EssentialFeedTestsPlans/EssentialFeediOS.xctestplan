@@ -1,8 +1,8 @@
 {
   "configurations" : [
     {
-      "id" : "70180A5A-1567-4890-A92F-4CC9ABD4718A",
-      "name" : "Test Scheme Action",
+      "id" : "17942357-D364-4FC9-B26E-34908DA9CA59",
+      "name" : "Configuration 1",
       "options" : {
 
       }
@@ -17,8 +17,7 @@
           "name" : "EssentialFeediOS"
         }
       ]
-    },
-    "testExecutionOrdering" : "random"
+    }
   },
   "testTargets" : [
     {

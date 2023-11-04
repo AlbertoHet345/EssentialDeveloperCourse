@@ -153,11 +153,11 @@
 		78CD8EBF2ACDF6B2009F3D86 /* NSEntityDescription+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEntityDescription+Assertions.swift"; sourceTree = "<group>"; };
 		78CD8EC32ACE1374009F3D86 /* ManagedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCache.swift; sourceTree = "<group>"; };
 		78CD8EC52ACE138F009F3D86 /* ManagedFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedFeedImage.swift; sourceTree = "<group>"; };
+		78D7F4792AF5DBEB008C0363 /* EssentialFeediOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = EssentialFeediOS.xctestplan; path = EssentialFeedTestsPlans/EssentialFeediOS.xctestplan; sourceTree = SOURCE_ROOT; };
 		78D8A3772AF5C9AC00DE54FF /* EssentialFeedAPIEndToEnd.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeedAPIEndToEnd.xctestplan; sourceTree = "<group>"; };
 		78D8A37E2AF5CBD200DE54FF /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D8A3852AF5CBD200DE54FF /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78D8A3932AF5CC3400DE54FF /* EssentialFeediOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeediOS.xctestplan; sourceTree = "<group>"; };
-		78D8A3942AF5CE4500DE54FF /* CI_iOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; path = CI_iOS.xctestplan; sourceTree = SOURCE_ROOT; };
+		78D8A3942AF5CE4500DE54FF /* CI_iOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI_iOS.xctestplan; sourceTree = SOURCE_ROOT; };
 		78D8A3952AF5D5A800DE54FF /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -387,7 +387,7 @@
 		78D8A3782AF5CB1400DE54FF /* EssentialFeedTestsPlans */ = {
 			isa = PBXGroup;
 			children = (
-				78D8A3932AF5CC3400DE54FF /* EssentialFeediOS.xctestplan */,
+				78D7F4792AF5DBEB008C0363 /* EssentialFeediOS.xctestplan */,
 				78D8A3772AF5C9AC00DE54FF /* EssentialFeedAPIEndToEnd.xctestplan */,
 				78A381A32AE36DD7006F71E4 /* EssentialFeedCacheIntegration.xctestplan */,
 				784641C12A86A0CA00ABD8F1 /* EssentialFeed.xctestplan */,
