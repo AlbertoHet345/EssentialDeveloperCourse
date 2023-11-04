@@ -240,12 +240,9 @@
 		78B841FA2A79DE7500F2A3DD = {
 			isa = PBXGroup;
 			children = (
-				78D8A3772AF5C9AC00DE54FF /* EssentialFeedAPIEndToEnd.xctestplan */,
-				78A381A32AE36DD7006F71E4 /* EssentialFeedCacheIntegration.xctestplan */,
-				784641C12A86A0CA00ABD8F1 /* EssentialFeed.xctestplan */,
-				784641D12A86AC1400ABD8F1 /* CI.xctestplan */,
 				78B842062A79DE7500F2A3DD /* EssentialFeed */,
 				78B842102A79DE7500F2A3DD /* EssentialFeedTests */,
+				78D8A3782AF5CB1400DE54FF /* EssentialFeedTestsPlans */,
 				784641C72A86A5F700ABD8F1 /* EssentialFeedAPIEndToEndTests */,
 				78A381922AE34D4C006F71E4 /* EssentialFeedCacheIntegrationTests */,
 				78B842052A79DE7500F2A3DD /* Products */,
@@ -326,6 +323,17 @@
 				787F44FB2ABAA4AF00B98D82 /* XCTestCase+FailableInsertFeedStoreSpecs.swift */,
 			);
 			path = FeedStoreSpecs;
+			sourceTree = "<group>";
+		};
+		78D8A3782AF5CB1400DE54FF /* EssentialFeedTestsPlans */ = {
+			isa = PBXGroup;
+			children = (
+				78D8A3772AF5C9AC00DE54FF /* EssentialFeedAPIEndToEnd.xctestplan */,
+				78A381A32AE36DD7006F71E4 /* EssentialFeedCacheIntegration.xctestplan */,
+				784641C12A86A0CA00ABD8F1 /* EssentialFeed.xctestplan */,
+				784641D12A86AC1400ABD8F1 /* CI.xctestplan */,
+			);
+			path = EssentialFeedTestsPlans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
