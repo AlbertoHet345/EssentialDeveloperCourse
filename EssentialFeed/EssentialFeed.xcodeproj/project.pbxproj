@@ -88,6 +88,7 @@
 		78D8A39D2AF5D9EA00DE54FF /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783726022A81C48100F1449B /* XCTestCase+MemoryLeakTracking.swift */; };
 		78DA541B2B3BCB4D00912800 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA541A2B3BCB4D00912800 /* ErrorView.swift */; };
 		78DA541E2B3BD52700912800 /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA541D2B3BD52700912800 /* UIRefreshControl+Helpers.swift */; };
+		78DA54072B3BB2ED00912800 /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA54062B3BB2ED00912800 /* FeedPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +228,7 @@
 		78D8A3952AF5D5A800DE54FF /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		78DA541A2B3BCB4D00912800 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		78DA541D2B3BD52700912800 /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
+		78DA54062B3BB2ED00912800 /* FeedPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +505,7 @@
 				783726012A81C46200F1449B /* Helpers */,
 				78B63D892A8EB73F00191B7F /* Feed Cache */,
 				789470B92A81A0DC000E0D08 /* Feed API */,
+				78DA54052B3BB2D300912800 /* Feed Presentation */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -598,6 +601,13 @@
 				78DA541D2B3BD52700912800 /* UIRefreshControl+Helpers.swift */,
 			);
 			path = Helpers;
+        };
+		78DA54052B3BB2D300912800 /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				78DA54062B3BB2ED00912800 /* FeedPresenterTests.swift */,
+			);
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -902,6 +912,7 @@
 				78CA80722A96ED6D009B38FE /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				783726032A81C48100F1449B /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				787F44F82ABA9DC700B98D82 /* XCTestCase+FeedStoreSpecs.swift in Sources */,
+				78DA54072B3BB2ED00912800 /* FeedPresenterTests.swift in Sources */,
 				78CD8EBC2ACDF674009F3D86 /* NSManagedObjectContext+Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
