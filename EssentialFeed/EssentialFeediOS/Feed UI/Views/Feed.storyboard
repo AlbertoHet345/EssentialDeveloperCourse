@@ -20,27 +20,28 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oY3-hJ-ZgV">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9F-My-E07">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Error label">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hideMessage" destination="Yap-Uw-lXH" eventType="touchUpInside" id="tx0-Dm-zPo"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.99951404330000004" green="0.41759261489999999" blue="0.4154433012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <gestureRecognizers/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="oY3-hJ-ZgV" secondAttribute="trailing" id="7FI-7T-Q50"/>
-                                <constraint firstAttribute="bottom" secondItem="oY3-hJ-ZgV" secondAttribute="bottom" id="D0n-Tn-US9"/>
-                                <constraint firstAttribute="bottom" secondItem="oY3-hJ-ZgV" secondAttribute="bottom" id="M5z-2g-jh3"/>
-                                <constraint firstAttribute="trailing" secondItem="oY3-hJ-ZgV" secondAttribute="trailing" id="SSv-gz-Wdc"/>
-                                <constraint firstItem="oY3-hJ-ZgV" firstAttribute="leading" secondItem="Yap-Uw-lXH" secondAttribute="leading" id="YvW-0K-yHe"/>
-                                <constraint firstItem="oY3-hJ-ZgV" firstAttribute="leading" secondItem="Yap-Uw-lXH" secondAttribute="leading" id="doC-k0-NFj"/>
-                                <constraint firstItem="oY3-hJ-ZgV" firstAttribute="top" secondItem="Yap-Uw-lXH" secondAttribute="top" id="w7Q-Wq-mbK"/>
-                                <constraint firstItem="oY3-hJ-ZgV" firstAttribute="top" secondItem="Yap-Uw-lXH" secondAttribute="top" id="xU1-ab-tHg"/>
+                                <constraint firstItem="E9F-My-E07" firstAttribute="leading" secondItem="Yap-Uw-lXH" secondAttribute="leading" id="HnU-Ur-DdG"/>
+                                <constraint firstAttribute="bottom" secondItem="E9F-My-E07" secondAttribute="bottom" id="Oqm-Hx-BU4"/>
+                                <constraint firstItem="E9F-My-E07" firstAttribute="top" secondItem="Yap-Uw-lXH" secondAttribute="top" id="Ztw-ZY-6mA"/>
+                                <constraint firstAttribute="trailing" secondItem="E9F-My-E07" secondAttribute="trailing" id="pjC-pr-BYL"/>
                             </constraints>
                             <connections>
-                                <outlet property="label" destination="oY3-hJ-ZgV" id="Duc-tC-Xq3"/>
+                                <outlet property="button" destination="E9F-My-E07" id="J9D-fQ-pOP"/>
                             </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="xKv-RE-qgm">
