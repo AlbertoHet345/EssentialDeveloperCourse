@@ -24,8 +24,16 @@ public final class ErrorView: UIView {
         button.setTitle(nil, for: .normal)
         alpha = 0
     }
+    
+    func update(message: String?) {
+        if let message {
+            show(message: message)
+        } else {
+            hideMessage()
+        }
+    }
 
-    func show(message: String) {
+    private func show(message: String) {
         button.setTitle(message, for: .normal)
 
         UIView.animate(withDuration: 0.25) {
@@ -33,7 +41,7 @@ public final class ErrorView: UIView {
         }
     }
 
-    @IBAction func hideMessage() {
+    @IBAction private func hideMessage() {
         UIView.animate(
             withDuration: 0.25,
             animations: { self.alpha = 0 },
