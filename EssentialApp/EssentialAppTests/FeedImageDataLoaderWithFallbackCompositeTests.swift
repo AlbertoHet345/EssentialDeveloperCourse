@@ -83,7 +83,6 @@ class FeedImageDataLoaderWithFallbackCompositeTests: XCTestCase {
     }
     
     func test_loadImageData_deliversErrorOnBothPrimaryAndFallbackLoaderFailure() {
-        let fallbackData = anyData()
         let (sut, primaryLoader, fallbackLoader) = makeSUT()
         
         expect(sut, toCompleteWith: .failure(anyNSError())) {
@@ -125,18 +124,6 @@ class FeedImageDataLoaderWithFallbackCompositeTests: XCTestCase {
         action()
         
         wait(for: [exp], timeout: 1.0)
-    }
-    
-    private func anyData() -> Data {
-        Data("any data".utf8)
-    }
-    
-    private func anyURL() -> URL {
-        URL(string: "http://a-url.com")!
-    }
-    
-    private func anyNSError() -> NSError {
-        NSError(domain: "any error", code: 0)
     }
  
     private class LoaderSpy: FeedImageDataLoader {
