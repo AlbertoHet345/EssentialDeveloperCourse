@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		781280532B73299C00DD24E5 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781280522B73299C00DD24E5 /* HTTPClientStub.swift */; };
+		781280552B732A1600DD24E5 /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781280542B732A1600DD24E5 /* InMemoryFeedStore.swift */; };
 		783742BF2B6C9777004F9BF2 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742BE2B6C9777004F9BF2 /* SceneDelegateTests.swift */; };
 		783742C62B6CAA33004F9BF2 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742C12B6CAA33004F9BF2 /* MainQueueDispatchDecorator.swift */; };
 		783742C72B6CAA33004F9BF2 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742C02B6CAA33004F9BF2 /* FeedImageDataLoaderPresentationAdapter.swift */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		781280522B73299C00DD24E5 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		781280542B732A1600DD24E5 /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 		783742BE2B6C9777004F9BF2 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		783742C02B6CAA33004F9BF2 /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		783742C12B6CAA33004F9BF2 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				785DA0E72B562186009BE254 /* FeedImageDataLoaderSpy.swift */,
 				785DA0E92B5622C2009BE254 /* XCTestCase+FeedImageDataLoader.swift */,
 				781280522B73299C00DD24E5 /* HTTPClientStub.swift */,
+				781280542B732A1600DD24E5 /* InMemoryFeedStore.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				783742D82B6CAA5C004F9BF2 /* FeedViewControllerTests+Assertions.swift in Sources */,
 				783742BF2B6C9777004F9BF2 /* SceneDelegateTests.swift in Sources */,
 				783742D52B6CAA5C004F9BF2 /* UIButton+TestHelpers.swift in Sources */,
+				781280552B732A1600DD24E5 /* InMemoryFeedStore.swift in Sources */,
 				783AB7942B50BBA000351FC1 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				783742DC2B6CAA5C004F9BF2 /* FeedImageCell+TestHelpers.swift in Sources */,
 				785DA0E82B562186009BE254 /* FeedImageDataLoaderSpy.swift in Sources */,
