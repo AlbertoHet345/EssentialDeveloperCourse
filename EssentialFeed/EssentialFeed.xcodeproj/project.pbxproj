@@ -29,6 +29,8 @@
 		7846A78A2B5063CC0086010B /* CoreDataFeedImageDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7846A7892B5063CC0086010B /* CoreDataFeedImageDataStoreTests.swift */; };
 		7846A7912B5077A10086010B /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7846A7902B5077A10086010B /* CoreDataFeedStore+FeedImageDataLoader.swift */; };
 		7846A7932B507E300086010B /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7846A7922B507E300086010B /* CoreDataFeedStore+FeedStore.swift */; };
+		784A84022BA16DD700F81A98 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = 784A84002BA16DD700F81A98 /* Shared.strings */; };
+		784A84062BA16EB900F81A98 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A84052BA16EB900F81A98 /* SharedLocalizationTests.swift */; };
 		784F11482A8F08AE0021332C /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784F11472A8F08AE0021332C /* LocalFeedLoader.swift */; };
 		784F114A2A8F09220021332C /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784F11492A8F09220021332C /* FeedStore.swift */; };
 		785BF9582B0586F700BCBA10 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BF9572B0586F700BCBA10 /* FeedImageCellController.swift */; };
@@ -173,6 +175,10 @@
 		7846A78F2B5076C50086010B /* FeedStore2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore2.xcdatamodel; sourceTree = "<group>"; };
 		7846A7902B5077A10086010B /* CoreDataFeedStore+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 		7846A7922B507E300086010B /* CoreDataFeedStore+FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift"; sourceTree = "<group>"; };
+		784A84012BA16DD700F81A98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Shared.strings; sourceTree = "<group>"; };
+		784A84032BA16E0600F81A98 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Shared.strings; sourceTree = "<group>"; };
+		784A84042BA16E0700F81A98 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Shared.strings"; sourceTree = "<group>"; };
+		784A84052BA16EB900F81A98 /* SharedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTests.swift; sourceTree = "<group>"; };
 		784F11472A8F08AE0021332C /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		784F11492A8F09220021332C /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		785BF9532B05819200BCBA10 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
@@ -295,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				7826C1892BA1412A00C71A75 /* LoadResourcePresenterTests.swift */,
+				784A84052BA16EB900F81A98 /* SharedLocalizationTests.swift */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -303,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				7826C18C2BA1417800C71A75 /* LoadResourcePresenter.swift */,
+				784A84002BA16DD700F81A98 /* Shared.strings */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -536,7 +544,6 @@
 		78B842062A79DE7500F2A3DD /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
-				7826C18B2BA1416200C71A75 /* Shared Presentation */,
 				784F11462A8F08870021332C /* Feed Cache */,
 				78B842232A7A0C0100F2A3DD /* Feed API */,
 				78B842202A79DFE000F2A3DD /* Feed Feature */,
@@ -545,6 +552,7 @@
 				789D25252B88675F008AE371 /* Image Comments API */,
 				789D25212B886438008AE371 /* Shared API */,
 				789D25222B886442008AE371 /* Shared API Infra */,
+				7826C18B2BA1416200C71A75 /* Shared Presentation */,
 				78B842072A79DE7500F2A3DD /* EssentialFeed.h */,
 			);
 			path = EssentialFeed;
@@ -553,13 +561,13 @@
 		78B842102A79DE7500F2A3DD /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				7826C1882BA1411100C71A75 /* Shared Presentation */,
 				783726012A81C46200F1449B /* Helpers */,
 				78B63D892A8EB73F00191B7F /* Feed Cache */,
 				789470B92A81A0DC000E0D08 /* Feed API */,
 				78DA54052B3BB2D300912800 /* Feed Presentation */,
 				789D25262B886787008AE371 /* Image Comments API */,
 				789D25232B88647F008AE371 /* Shared API Infra */,
+				7826C1882BA1411100C71A75 /* Shared Presentation */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -882,6 +890,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78DA54122B3BBFFA00912800 /* Feed.strings in Resources */,
+				784A84022BA16DD700F81A98 /* Shared.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -984,6 +993,7 @@
 				7880DF472A97D09F00F53093 /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				787F44FC2ABAA4AF00B98D82 /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
 				78CA80752A96EE17009B38FE /* FeedStorageSpy.swift in Sources */,
+				784A84062BA16EB900F81A98 /* SharedLocalizationTests.swift in Sources */,
 				78CD8EBE2ACDF692009F3D86 /* NSManagedObjectContext+Helpers.swift in Sources */,
 				7826C18A2BA1412A00C71A75 /* LoadResourcePresenterTests.swift in Sources */,
 				789D252F2B88F687008AE371 /* ImageCommentsMapperTests.swift in Sources */,
@@ -1061,6 +1071,16 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		784A84002BA16DD700F81A98 /* Shared.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				784A84012BA16DD700F81A98 /* en */,
+				784A84032BA16E0600F81A98 /* el */,
+				784A84042BA16E0700F81A98 /* pt-BR */,
+			);
+			name = Shared.strings;
+			sourceTree = "<group>";
+		};
 		78DA540C2B3BBE2900912800 /* Feed.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
