@@ -12,7 +12,7 @@
 		783742BF2B6C9777004F9BF2 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742BE2B6C9777004F9BF2 /* SceneDelegateTests.swift */; };
 		783742C72B6CAA33004F9BF2 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742C02B6CAA33004F9BF2 /* FeedImageDataLoaderPresentationAdapter.swift */; };
 		783742C82B6CAA33004F9BF2 /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742C22B6CAA33004F9BF2 /* FeedViewAdapter.swift */; };
-		783742C92B6CAA33004F9BF2 /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742C32B6CAA33004F9BF2 /* FeedLoaderPresentationAdapter.swift */; };
+		783742C92B6CAA33004F9BF2 /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742C32B6CAA33004F9BF2 /* LoadResourcePresentationAdapter.swift */; };
 		783742CA2B6CAA33004F9BF2 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742C52B6CAA33004F9BF2 /* FeedUIComposer.swift */; };
 		783742CB2B6CAA33004F9BF2 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742C42B6CAA33004F9BF2 /* WeakRefVirtualProxy.swift */; };
 		783742D52B6CAA5C004F9BF2 /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783742CE2B6CAA5B004F9BF2 /* UIButton+TestHelpers.swift */; };
@@ -72,7 +72,7 @@
 		783742BE2B6C9777004F9BF2 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		783742C02B6CAA33004F9BF2 /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		783742C22B6CAA33004F9BF2 /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
-		783742C32B6CAA33004F9BF2 /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		783742C32B6CAA33004F9BF2 /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 		783742C42B6CAA33004F9BF2 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		783742C52B6CAA33004F9BF2 /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		783742CC2B6CAA5B004F9BF2 /* FeedImageCell+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageCell+TestHelpers.swift"; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				783742C52B6CAA33004F9BF2 /* FeedUIComposer.swift */,
 				783742C42B6CAA33004F9BF2 /* WeakRefVirtualProxy.swift */,
 				783742C02B6CAA33004F9BF2 /* FeedImageDataLoaderPresentationAdapter.swift */,
-				783742C32B6CAA33004F9BF2 /* FeedLoaderPresentationAdapter.swift */,
+				783742C32B6CAA33004F9BF2 /* LoadResourcePresentationAdapter.swift */,
 				783742C22B6CAA33004F9BF2 /* FeedViewAdapter.swift */,
 				78BE99FF2B7FFC8900F23B15 /* CombineHelpers.swift */,
 				783AB76F2B50A21D00351FC1 /* Assets.xcassets */,
@@ -310,7 +310,7 @@
 				78BE9A002B7FFC8900F23B15 /* CombineHelpers.swift in Sources */,
 				783AB7672B50A21C00351FC1 /* AppDelegate.swift in Sources */,
 				783742C82B6CAA33004F9BF2 /* FeedViewAdapter.swift in Sources */,
-				783742C92B6CAA33004F9BF2 /* FeedLoaderPresentationAdapter.swift in Sources */,
+				783742C92B6CAA33004F9BF2 /* LoadResourcePresentationAdapter.swift in Sources */,
 				783742CA2B6CAA33004F9BF2 /* FeedUIComposer.swift in Sources */,
 				783AB7692B50A21C00351FC1 /* SceneDelegate.swift in Sources */,
 				783742CB2B6CAA33004F9BF2 /* WeakRefVirtualProxy.swift in Sources */,
