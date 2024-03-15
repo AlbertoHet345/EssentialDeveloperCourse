@@ -13,7 +13,7 @@ final class SharedLocalizationTests: XCTestCase {
         let table = "Shared"
         let bundle = Bundle(for: LoadResourcePresenter<Any, DummyView>.self)
         
-        assertLocalizedKeyAndValuesExists(in: bundle, table)
+        assertLocalizedKeyAndValuesExist(in: bundle, table)
     }
     
     // MARK: - Helpers
