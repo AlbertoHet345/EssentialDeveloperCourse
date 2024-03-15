@@ -13,7 +13,7 @@ final class FeedLoacalizationTests: XCTestCase {
     func test_localizedStrings_haveKeysAndValuesForAllSupportedLocalizations() {
         let table = "Feed"
         let bundle = Bundle(for: FeedPresenter.self)
-        assertLocalizedKeyAndValuesExists(in: bundle, table)
+        assertLocalizedKeyAndValuesExist(in: bundle, table)
     }
     
 }
