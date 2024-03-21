@@ -1,5 +1,5 @@
 //
-//  SnapshotHelpers.swift
+//  XCTestCase+Snapshot.swift
 //  EssentialFeediOSTests
 //
 //  Created by Alberto Garcia Paul on 21/03/24.
@@ -39,6 +39,7 @@ extension XCTestCase {
             )
             
             try snapshotData?.write(to: snapshotURL)
+            XCTFail("Record succeeded - use `assert` to compare the snapshot from now on.", file: file, line: line)
         } catch {
             XCTFail("Failed to record snapshot with error: \(error)", file: file, line: line)
         }
