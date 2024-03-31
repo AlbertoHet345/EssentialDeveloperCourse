@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7801E6CD2A97E7460084D0F5 /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801E6CC2A97E7460084D0F5 /* FeedCachePolicy.swift */; };
+		780769332BB9236A00378A5E /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780769322BB9236A00378A5E /* UIView+Container.swift */; };
 		780B0A5F2B045A8A00DD0BD0 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780B0A5E2B045A8A00DD0BD0 /* FeedImageCell.swift */; };
 		7812B0F42BB4E12F00DB11BF /* LIST_WITH_ERROR_MESSAGE_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 7812B0F22BB4E12E00DB11BF /* LIST_WITH_ERROR_MESSAGE_light.png */; };
 		7812B0F52BB4E12F00DB11BF /* LIST_WITH_ERROR_MESSAGE_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7812B0F32BB4E12E00DB11BF /* LIST_WITH_ERROR_MESSAGE_dark.png */; };
@@ -181,6 +182,7 @@
 
 /* Begin PBXFileReference section */
 		7801E6CC2A97E7460084D0F5 /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
+		780769322BB9236A00378A5E /* UIView+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
 		780B0A5E2B045A8A00DD0BD0 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		7812B0F22BB4E12E00DB11BF /* LIST_WITH_ERROR_MESSAGE_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIST_WITH_ERROR_MESSAGE_light.png; sourceTree = "<group>"; };
 		7812B0F32BB4E12E00DB11BF /* LIST_WITH_ERROR_MESSAGE_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIST_WITH_ERROR_MESSAGE_dark.png; sourceTree = "<group>"; };
@@ -820,6 +822,7 @@
 				78DA54252B3BD83400912800 /* UIRefreshControl+Helpers.swift */,
 				78DA54242B3BD83400912800 /* UITableView+Dequeueing.swift */,
 				785E9E122B75BD8800CD3B80 /* UITableView+HeaderSizing.swift */,
+				780769322BB9236A00378A5E /* UIView+Container.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1253,6 +1256,7 @@
 				785E9E132B75BD8800CD3B80 /* UITableView+HeaderSizing.swift in Sources */,
 				78FB013F2BACBCAF00FD9E05 /* ImageCommentCell.swift in Sources */,
 				78DA541B2B3BCB4D00912800 /* ErrorView.swift in Sources */,
+				780769332BB9236A00378A5E /* UIView+Container.swift in Sources */,
 				7812B0F72BB6020600DB11BF /* CellController.swift in Sources */,
 				78FB01412BACBD3600FD9E05 /* ImageCommentCellController.swift in Sources */,
 				7838DD3B2AFECA9600C47A87 /* ListViewController.swift in Sources */,
