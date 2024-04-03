@@ -117,7 +117,6 @@
 		78DA54072B3BB2ED00912800 /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA54062B3BB2ED00912800 /* FeedPresenterTests.swift */; };
 		78DA54112B3BBF8E00912800 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA54102B3BBF8E00912800 /* FeedPresenter.swift */; };
 		78DA54122B3BBFFA00912800 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78DA540C2B3BBE2900912800 /* Feed.strings */; };
-		78DA54142B3BC04100912800 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA54132B3BC04100912800 /* FeedViewModel.swift */; };
 		78DA54182B3BC05200912800 /* ResourceErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA54172B3BC05200912800 /* ResourceErrorViewModel.swift */; };
 		78DA54192B3BC26100912800 /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782EB88D2B112A2F00EEE1FE /* FeedLocalizationTests.swift */; };
 		78DA541B2B3BCB4D00912800 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA541A2B3BCB4D00912800 /* ErrorView.swift */; };
@@ -310,7 +309,6 @@
 		78DA540D2B3BBE2B00912800 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		78DA540E2B3BBE2B00912800 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		78DA54102B3BBF8E00912800 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
-		78DA54132B3BC04100912800 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		78DA54152B3BC04A00912800 /* ResourceLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingViewModel.swift; sourceTree = "<group>"; };
 		78DA54172B3BC05200912800 /* ResourceErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceErrorViewModel.swift; sourceTree = "<group>"; };
 		78DA541A2B3BCB4D00912800 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -781,7 +779,6 @@
 			isa = PBXGroup;
 			children = (
 				78DA54102B3BBF8E00912800 /* FeedPresenter.swift */,
-				78DA54132B3BC04100912800 /* FeedViewModel.swift */,
 				782EB86B2B0D83CF00EEE1FE /* FeedImageViewModel.swift */,
 				782EB8702B0EB50500EEE1FE /* FeedImagePresenter.swift */,
 				78DA540C2B3BBE2900912800 /* Feed.strings */,
@@ -1233,7 +1230,6 @@
 				78CD8EBA2ACDEEF0009F3D86 /* FeedStore.xcdatamodeld in Sources */,
 				7826C18D2BA1417800C71A75 /* LoadResourcePresenter.swift in Sources */,
 				789D251D2B885C94008AE371 /* ImageCommentsMapper.swift in Sources */,
-				78DA54142B3BC04100912800 /* FeedViewModel.swift in Sources */,
 				78CA80702A96DBF6009B38FE /* LocalFeedImage.swift in Sources */,
 				7846A7932B507E300086010B /* CoreDataFeedStore+FeedStore.swift in Sources */,
 				784F114A2A8F09220021332C /* FeedStore.swift in Sources */,
