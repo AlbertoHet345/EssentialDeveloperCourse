@@ -26,6 +26,16 @@ public class LoadMoreCellController: NSObject, UITableViewDataSource, UITableVie
     
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard !self.cell.isLoading else { return }
+        reloadIfNeeded()
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        reloadIfNeeded()
+    }
+    
+    private func reloadIfNeeded() {
+        guard !cell.isLoading else { return }
+        
         callback()
     }
 }
