@@ -12,7 +12,7 @@ public typealias CachedFeed = (feed: [LocalFeedImage], timestamp: Date)
 public protocol FeedStore {
     func deleteCachedFeed() throws
     func insert(_ feed: [LocalFeedImage], timestamp: Date) throws
-    func retrive() throws -> CachedFeed?
+    func retrieve() throws -> CachedFeed?
     
     typealias DeletionResult = Result<Void, Error>
     typealias DeletionCompletion = (DeletionResult) -> Void
@@ -64,7 +64,7 @@ public extension FeedStore {
         return try result.get()
     }
     
-    func retrive() throws -> CachedFeed? {
+    func retrieve() throws -> CachedFeed? {
         let group = DispatchGroup()
         group.enter()
         var result: RetrievalResult!
