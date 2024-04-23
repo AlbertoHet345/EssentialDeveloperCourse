@@ -14,6 +14,7 @@ class CoreDataFeedImageDataStoreTests: XCTestCase, FeedImageDataStoreSpecs {
         try makeSUT { sut, imageDataURL in
             self.assertThatRetrieveImageDataDeliversNotFoundOnEmptyCache(on: sut, imageDataURL: imageDataURL)
         }
+        
     }
     
     func test_retrieveImageData_deliversNotFoundWhenStoredDataURLDoesNotMatch() throws {
@@ -52,15 +53,15 @@ class CoreDataFeedImageDataStoreTests: XCTestCase, FeedImageDataStoreSpecs {
             test(sut, imageDataURL)
             exp.fulfill()
         }
-        return sut
+        wait(for: [exp], timeout: 0.1)
     }
-    
-    private func insertFeedImage(with url: URL, into sut: CoreDataFeedStore, file: StaticString = #file, line: UInt = #line) {
-        do {
-            let image = LocalFeedImage(id: UUID(), description: "any", location: "any", url: url)
-            try sut.insert([image], timestamp: Date())
-        } catch {
-            XCTFail("Failed to insert feed image with URL \(url) - error: \(error)", file: file, line: line)
-        }
+}
+
+func insertFeedImage(with url: URL, into sut: CoreDataFeedStore, file: StaticString = #file, line: UInt = #line) {
+    do {
+        let image = LocalFeedImage(id: UUID(), description: "any", location: "any", url: url)
+        try sut.insert([image], timestamp: Date())
+    } catch {
+        XCTFail("Failed to insert feed image with URL \(url) - error: \(error)", file: file, line: line)
     }
 }
