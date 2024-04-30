@@ -95,7 +95,9 @@ class FeedAcceptanceTests: XCTestCase {
         sut.configureWindow()
         
         let nav = sut.window?.rootViewController as? UINavigationController
-        return nav?.topViewController as! ListViewController
+        let vc = nav?.topViewController as! ListViewController
+        vc.simulateAppearance()
+        return vc
     }
     
     private func enterBackground(with store: CoreDataFeedStore) {
@@ -110,7 +112,9 @@ class FeedAcceptanceTests: XCTestCase {
         RunLoop.current.run(until: Date())
         
         let nav = feed.navigationController
-        return nav?.topViewController as! ListViewController
+        let vc = nav?.topViewController as! ListViewController
+        vc.simulateAppearance()
+        return vc
     }
     
     private func response(for url: URL) -> (Data, HTTPURLResponse) {
