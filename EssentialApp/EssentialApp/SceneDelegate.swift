@@ -18,8 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     private lazy var scheduler: AnyDispatchQueueScheduler = DispatchQueue(
         label: "com.albertogarcia.infra.queue",
-        qos: .userInitiated,
-        attributes: .concurrent
+        qos: .userInitiated
     ).eraseToAnyScheduler()
 
     private lazy var httpClient: HTTPClient = {
@@ -37,7 +36,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } catch {
             assertionFailure("Failed to instantiate CoreData store with error: \(error.localizedDescription)")
             logger.fault("Failed to instantiate CoreData store with error: \(error.localizedDescription)")
-            return NullStore()
+            return InMemoryFeedStore()
         }
     }()
     
